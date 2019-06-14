@@ -1,0 +1,19 @@
+<nav id="sidebar">
+  <div class="sidebar-header" style="background: white;">
+      <h3 style="color: black;">Logo</h3>
+      <!-- <img src="logo1.png" alt="logo"> -->
+  </div>
+
+  <ul class="list-unstyled components">
+      <li>
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">IBM ODM</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li *ngFor="let item of items; let i = index" (click)="onClick( item )">
+                  <a href="#">{{ item.titulo }}</a>
+              </li>
+
+          </ul>
+      </li>
+
+  </ul>
+</nav>

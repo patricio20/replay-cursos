@@ -1,0 +1,16 @@
+<div id="content">
+  <div class="menu-header">
+      <span class="menu-text">{{ titulo }}</span>
+  </div>
+
+  <div class="row">
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" 
+      width="100%" height="740px">
+          <param name="movie" value="flashmovie.swf" />
+          <param name="quality" value="high" />
+          <embed [src]=" link  | safe "
+          quality="high" type="application/x-shockwave-flash" width="100%" height="100%" 
+          pluginspage="http://www.macromedia.com/go/getflashplayer" />
+      </object>
+  </div>
+</div>
