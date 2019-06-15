@@ -1,19 +1,26 @@
 <nav id="sidebar">
-  <div class="sidebar-header" style="background: white;">
-      <h3 style="color: black;">Logo</h3>
-      <!-- <img src="logo1.png" alt="logo"> -->
-  </div>
+
+    <div class="sidebar-header">
+        <h3>INDRA SAE</h3>
+    </div>
 
   <ul class="list-unstyled components">
-      <li>
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">IBM ODM</a>
+    <p>Cursos Libres</p>
+    <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">IBM Operational Decision Manager V8.10</a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
               <li *ngFor="let item of items; let i = index" (click)="onClick( item )">
                   <a href="#">{{ item.titulo }}</a>
               </li>
 
           </ul>
-      </li>
+    </li>
+    <li class="active">
+        <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">IBM BPM</a>
+    </li>
+    <li class="active">
+       <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">IBM App conect</a>
+    </li>    
 
   </ul>
 </nav>
